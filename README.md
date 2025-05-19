@@ -2,7 +2,7 @@
 This program will scan a JSON file made with the autograder and find all instances
 of pairs that have higher similarity than the given threshold (default 0.85). 
 
-It will output the pairs in a csv format that can be pasted into a spreadsheet.
+It will output the pairs in a csv format that can be pasted into a spreadsheet.To split the output into multiple columns in Google Sheets, go to Data > Split Text to Columns.
 
 ## Usage
 Run the command `python3 filter.py` with the following arguments to run the program.
