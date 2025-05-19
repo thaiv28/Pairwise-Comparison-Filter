@@ -7,7 +7,7 @@ It will output the pairs in a csv format that can be pasted into a spreadsheet.T
 ## Usage
 Run the command `python3 filter.py` with the following arguments to run the program.
 
-```bash
+```
 usage: python3 filter.py [-h] [-t THRESHOLD] [-c CONFIG] filename
 
 positional arguments:
