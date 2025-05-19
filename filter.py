@@ -8,12 +8,14 @@ import pandas as pd
 BASE_COMMAND=["python3", "-m", "autograder.run.peek"]
 
 def main():
-    parser = argparse.ArgumentParser("splendor")
-    parser.add_argument("filename")
+    parser = argparse.ArgumentParser("python3 filter.py")
+    parser.add_argument("filename", help="JSON file to check for pairwise similarity")
     parser.add_argument('-t', "--threshold", default=0.85,
                         help="Minimum mean similarity to flag pairs", type=float)
     parser.add_argument('-c', "--config",
-                        help="Config file for autograder", type=str)
+                        help="Config file for autograder. If no config file is provided \
+                        then it is assumed that there is a config file in the present \
+                        working directory.")
 
     args = parser.parse_args()
 
